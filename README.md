@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="https://github.com/Ruditimmermans/Sailbook/blob/master/sailbook.png" width="256px" alt="Sailbook">
+  <img src="https://github.com/Ruditimmermans/sailbook/blob/master/img/sailbook.png" width="256px" alt="Sailbook">
   <br>
   <br>
   Sailbook
