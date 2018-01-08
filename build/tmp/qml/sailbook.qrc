@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>UCSComponents/EmptyState.qml</file>
+        <file>UCSComponents/RadialAction.qml</file> 
+        <file>UCSComponents/RadialBottomEdge.qml</file>
+        <file>actions/Copy.qml</file>
+        <file>actions/CopyImage.qml</file>
+        <file>actions/CopyLink.qml</file>
+        <file>actions/SaveImage.qml</file>
+        <file>actions/ShareLink.qml</file>
+        <file>sailbook.png</file>
+        <file>splash.png</file>
+        <file>MimeTypeMapper.js</file>
+        <file>Downloader.qml</file>
+        <file>ThinProgressBar.qml</file>
+        <file>FileExtensionMapper.js</file>
+        <file>FilePickerDialog.qml</file>
+        <file>ContentDownloadDialog.qml</file>
+        <file>ContentPickerDialog.qml</file>
+        <file>ContentShareDialog.qml</file>
+        <file>Share.qml</file>
+        <file>AboutPage.qml</file>
+        <file>config.js</file>
+    </qresource>
+</RCC>

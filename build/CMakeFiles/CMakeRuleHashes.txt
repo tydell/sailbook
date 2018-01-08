@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+ed4c7e1aeccc769952090912dd859214 CMakeFiles/sailbook.desktop

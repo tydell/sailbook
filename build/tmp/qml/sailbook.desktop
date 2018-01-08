@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Sailbook
+Exec=Sailbook
+Icon=Sailbook/Sailbook.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+Name[nl]=sailbook.desktop
