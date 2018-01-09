@@ -1,1 +1,0 @@
-/home/rudi/Development/sailbook/build/CMakeFiles/sailbook.desktop.dir
