@@ -8,7 +8,19 @@ ProgressBar {
 
     showProgressPercentage: false
     value: webview ? webview.loadProgress / 100 : 0.0
+    property color color: "#3F548D"
     visible: webview ? webview.loading
                        && !webview.lastLoadStopped
                      : false
-}
+
+    clip: true
+
+    Rectangle {
+    id: border
+    anchors.fill: parent
+
+    color: "#3F548D"
+    border.width: 0
+    border.color: parent.color
+    }
+   }

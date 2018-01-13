@@ -7,9 +7,9 @@ Item {
     
     property int hintSize: units.gu(8)
     property color hintColor: Theme.palette.normal.overlay
-    property string hintIconName: "view-grid-symbolic"
+    property string hintIconName: "facebook-symbolic"
     property alias hintIconSource: hintIcon.source
-    property color hintIconColor: UbuntuColors.coolGrey
+    property color hintIconColor: "#3F548D"
     property bool bottomEdgeEnabled: true
 
     property int expandAngle: 360

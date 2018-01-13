@@ -6,5 +6,6 @@ Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
 X-Ubuntu-Default-Department-ID=communication
+X-Ubuntu-Splash-Color=#3F548D
 X-Ubuntu-Splash-Image=img/splash.png
 

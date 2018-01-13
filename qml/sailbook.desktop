@@ -5,4 +5,5 @@ Icon=Sailbook/Sailbook.png
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Color=#3F548D
 Name[nl]=sailbook.desktop
