@@ -1,0 +1,26 @@
+[
+        {
+                "protocol": "http",
+                "domain-suffix": "touch.facebook.com"
+        },
+        {
+                "protocol": "https",
+                "domain-suffix": "touch.facebook.com"
+        },
+        {
+                "protocol": "http",
+                "domain-suffix": "touch.facebook.com"
+        },
+        {
+                "protocol": "https",
+                "domain-suffix": "touch.facebook.com"
+        },
+        {
+                "protocol": "http",
+                "domain-suffix": "touch.facebook.com/*"
+        },
+        {
+                "protocol": "https",
+                "domain-suffix": "touch.facebook.com/*"
+        }
+]

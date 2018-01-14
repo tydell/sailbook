@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-08 17:16+0100\n"
+"POT-Creation-Date: 2018-01-14 20:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,29 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/rudi/Development/sailbook/qml/FilePickerDialog.qml:10
-#: /home/rudi/Development/sailbook/build/tmp/qml/FilePickerDialog.qml:10
+#: /home/rudi/Development/sailbook/qml/FilePickerDialog.qml:28
+#: /home/rudi/Development/sailbook/build/tmp/qml/FilePickerDialog.qml:28
 msgid "Please choose a file"
+msgstr ""
+
+#: /home/rudi/Development/sailbook/qml/Main.qml:93
+#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:93
+msgid "Copy Link"
+msgstr ""
+
+#: /home/rudi/Development/sailbook/qml/Main.qml:101
+#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:101
+msgid "Share Link"
+msgstr ""
+
+#: /home/rudi/Development/sailbook/qml/Main.qml:117
+#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:117
+msgid "Copy Image"
+msgstr ""
+
+#: /home/rudi/Development/sailbook/qml/Main.qml:122
+#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:122
+msgid "Download Image"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/QrCodeDialog.qml:11

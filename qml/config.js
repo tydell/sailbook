@@ -1,6 +1,20 @@
+// the name of your app as used in the click package (required)
 var webappName = "sailbook.sailbook"
-var buttonTitle = "+"
-var buttonWidth = 2
-var superPattern = false
-var webSites = [{name:"Sailbook",url:"http://touch.facebook.com/",pattern:"https?://*.touch.facebook.com/*"}]
-//var webappUA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.45 Safari/535.19"
+
+// the start url of your app (required)
+var webappUrl = "https://touch.facebook.com"
+
+// the the pattern that defines which links are considered
+// local and which are opened in an external browser (required)
+var webappUrlPattern = "https?://*.touch.facebook.com/*, https?://touch.facebook.com/*"
+
+// a user agent override (optional)
+// var webappUA = "uncomment this line and set your User Agent string here between these quotes, if you need to override it"
+
+// Haptic feedback for links (note, this does not work if your site
+// uses javascript functions to open links) (optional)
+ var hapticLinks = "true"
+
+// Audible feedback when clicking links (the same constraints as
+// for hapticLinks apply) (optional)
+// var audibleLinks = "true"

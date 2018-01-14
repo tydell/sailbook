@@ -50,11 +50,8 @@ qml/actions/CopyImage.qml \
 qml/actions/CopyLink.qml \
 qml/actions/SaveImage.qml \
 qml/actions/ShareLink.qml \
-qml/sailbook.png \
-qml/splash.png \
 qml/MimeTypeMapper.js \
 qml/Downloader.qml \
-qml/ThinProgressBar.qml \
 qml/FileExtensionMapper.js \
 qml/FilePickerDialog.qml \
 qml/ContentDownloadDialog.qml \
