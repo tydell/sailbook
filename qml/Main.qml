@@ -197,7 +197,7 @@ MainView {
                     id: home
                     iconName: "home"
                     onTriggered: {
-                        webview.url = 'https://m.facebook.com'
+                        webview.url = 'https://touch.facebook.com'
                     }
                     text: qsTr("Home")
                 },

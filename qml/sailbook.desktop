@@ -1,9 +1,9 @@
 [Desktop Entry]
 Name=Sailbook
-Exec=Sailbook
-Icon=Sailbook/Sailbook.png
+Exec=qmlscene %u qml/Main.qml
+Icon=img/sailbook.svg
 Terminal=false
 Type=Application
 X-Ubuntu-Touch=true
-X-Ubuntu-Splash-Color=#3F548D
-Name[nl]=sailbook.desktop
+X-Ubuntu-Default-Department-ID=communication
+X-Ubuntu-Splash-Image=img/splash.svg

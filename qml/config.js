@@ -2,11 +2,11 @@
 var webappName = "sailbook.sailbook"
 
 // the start url of your app (required)
-var webappUrl = "https://m.facebook.com"
+var webappUrl = "https://touch.facebook.com"
 
 // the the pattern that defines which links are considered
 // local and which are opened in an external browser (required)
-var webappUrlPattern = "https?://*.m.facebook.com/*, https?://m.facebook.com/*"
+var webappUrlPattern = "https?://*.touch.facebook.com/*, https?://touch.facebook.com/*"
 
 // a user agent override (optional)
 // var webappUA = "uncomment this line and set your User Agent string here between these quotes, if you need to override it"
