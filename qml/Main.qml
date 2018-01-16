@@ -61,6 +61,7 @@ MainView {
             userAgent: myUA
 
         }
+
         WebView {
             id: webview
 
@@ -78,14 +79,13 @@ MainView {
             preferences.allowUniversalAccessFromFileUrls: true
             preferences.appCacheEnabled: true
             preferences.javascriptCanAccessClipboard: true
-            filePicker: filePickerLoader.item
 
-           contextualActions: ActionList {
+            contextualActions: ActionList {
 
     /// strange...
             Action {
-                        text: i18n.tr(webview.contextualData.href.toString())
-        enabled: contextualData.herf.toString()
+             text: i18n.tr(webview.contextualData.href.toString())
+                    enabled: contextualData.herf.toString()
               }
 
      /// didn't seem to work without a item that is always triggered...
@@ -151,6 +151,7 @@ MainView {
                         url = Qt.application.arguments[1]
                     }
                 }
+
                 console.warn("url is: " + url)
             }
             onGeolocationPermissionRequested: { request.accept() }
@@ -161,11 +162,8 @@ MainView {
                 asynchronous: true
             }
 
-            Loader {
-                id: filePickerLoader
-                source: "ContentPickerDialog.qml"
-                asynchronous: true
-            }
+            filePicker: pickerComponent
+
             function isValid (url){
                 var pattern = myPattern.split(',');
                 for (var i=0; i<pattern.length; i++) {
@@ -178,6 +176,7 @@ MainView {
                 return false;
             }
         }
+
         NewProgressBar {
             webview: webview
             width: parent.width + units.gu(5)
@@ -238,6 +237,11 @@ MainView {
                 }
             ]
         }
+    }
+
+    Component {
+        id: pickerComponent
+        PickerDialog {}
     }
 
     Connections {

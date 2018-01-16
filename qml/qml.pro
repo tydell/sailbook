@@ -53,10 +53,9 @@ qml/actions/ShareLink.qml \
 qml/MimeTypeMapper.js \
 qml/Downloader.qml \
 qml/FileExtensionMapper.js \
-qml/FilePickerDialog.qml \
 qml/ContentDownloadDialog.qml \
-qml/ContentPickerDialog.qml \
 qml/ContentShareDialog.qml \
 qml/Share.qml \
+qml/PickerDialog.qml \
 qml/config.js \
 qml/AboutPage.qml

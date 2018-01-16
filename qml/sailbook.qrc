@@ -12,13 +12,12 @@
         <file>MimeTypeMapper.js</file>
         <file>Downloader.qml</file>
         <file>FileExtensionMapper.js</file>
-        <file>FilePickerDialog.qml</file>
         <file>ContentDownloadDialog.qml</file>
-        <file>ContentPickerDialog.qml</file>
         <file>ContentShareDialog.qml</file>
         <file>NewProgressBar.qml</file>
         <file>config.js</file>
         <file>Share.qml</file>
         <file>AboutPage.qml</file>
+        <file>PickerDialog.qml</file>
     </qresource>
 </RCC>
