@@ -20,7 +20,7 @@ MainView {
 
     anchorToKeyboard: true
     automaticOrientation: true
-    
+
 
     property string myUrl: Conf.webappUrl
     property string myPattern: Conf.webappUrlPattern
@@ -59,7 +59,7 @@ MainView {
         WebContext {
             id: webcontext
             userAgent: myUA
-            
+
         }
         WebView {
             id: webview
@@ -67,7 +67,7 @@ MainView {
             anchors {
                 fill: parent
                 bottom: parent.bottom
-            } 
+            }
             width: parent.width
             height: parent.height
             context: webcontext
@@ -81,22 +81,22 @@ MainView {
             filePicker: filePickerLoader.item
 
            contextualActions: ActionList {
-            
+
     /// strange...
             Action {
                         text: i18n.tr(webview.contextualData.href.toString())
         enabled: contextualData.herf.toString()
               }
-              
+
      /// didn't seem to work without a item that is always triggered...
         Action {
             text: i18n.tr("Copy Link")
                    enabled: webview.contextualData.href.toString()
-                   
+
                    //contextualData.href.toString()
             onTriggered: Clipboard.push([webview.contextualData.href])
               }
-              
+
                             Action {
                                         text: i18n.tr("Share Link")
                   enabled: webview.contextualData.href.toString()
@@ -112,12 +112,12 @@ MainView {
                       }
                   }
                   }
-                  
+
                Action {
             text: i18n.tr("Copy Image")
                   enabled: webview.contextualData.img.toString()
                   onTriggered: Clipboard.push([webview.contextualData.img])
-              }              
+              }
                Action {
                            text: i18n.tr("Download Image")
                    enabled: webview.contextualData.img.toString() && downloadLoader.status == Loader.Ready
@@ -166,7 +166,7 @@ MainView {
                 source: "ContentPickerDialog.qml"
                 asynchronous: true
             }
-            function isValid (url){ 
+            function isValid (url){
                 var pattern = myPattern.split(',');
                 for (var i=0; i<pattern.length; i++) {
                     var tmpsearch = pattern[i].replace(/\*/g,'(.*)')
@@ -174,8 +174,8 @@ MainView {
                     if (url.match(search)) {
                        return true;
                     }
-                } 
-                return false; 
+                }
+                return false;
             }
         }
         NewProgressBar {
@@ -247,7 +247,7 @@ MainView {
         Connections {
         target: webview
         onFullscreenRequested: webview.fullscreen = fullscreen
-       
+
         onFullscreenChanged: {
                 nav.visible = !webview.fullscreen
                 if (webview.fullscreen == true) {
