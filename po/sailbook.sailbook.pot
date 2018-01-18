@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-18 16:02+0100\n"
+"POT-Creation-Date: 2018-01-18 22:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,52 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: /home/rudi/Development/sailbook/qml/Main.qml:93
-#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:93
 msgid "Copy Link"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/Main.qml:101
-#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:101
 msgid "Share Link"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/Main.qml:117
-#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:117
 msgid "Copy Image"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/Main.qml:123
-#: /home/rudi/Development/sailbook/build/tmp/qml/Main.qml:122
 msgid "Download Image"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/Main.qml:129
 #: /home/rudi/Development/sailbook/qml/QrCodeDialog.qml:11
-#: /home/rudi/Development/sailbook/build/tmp/qml/QrCodeDialog.qml:11
 msgid "Close"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/actions/Copy.qml:22
-#: /home/rudi/Development/sailbook/build/tmp/qml/actions/Copy.qml:22
 msgid "Copy"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/actions/CopyImage.qml:22
-#: /home/rudi/Development/sailbook/build/tmp/qml/actions/CopyImage.qml:22
 msgid "Copy image"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/actions/CopyLink.qml:22
-#: /home/rudi/Development/sailbook/build/tmp/qml/actions/CopyLink.qml:22
 msgid "Copy link"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/actions/SaveImage.qml:22
-#: /home/rudi/Development/sailbook/build/tmp/qml/actions/SaveImage.qml:22
 msgid "Save image"
 msgstr ""
 
 #: /home/rudi/Development/sailbook/qml/actions/ShareLink.qml:22
-#: /home/rudi/Development/sailbook/build/tmp/qml/actions/ShareLink.qml:22
 msgid "Share…"
 msgstr ""

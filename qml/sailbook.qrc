@@ -19,5 +19,6 @@
         <file>Share.qml</file>
         <file>AboutPage.qml</file>
         <file>PickerDialog.qml</file>
+        <file>CustomDieDialog.qml</file>
     </qresource>
 </RCC>

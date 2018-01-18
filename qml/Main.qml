@@ -97,8 +97,8 @@ MainView {
             onTriggered: Clipboard.push([webview.contextualData.href])
               }
 
-                            Action {
-                                        text: i18n.tr("Share Link")
+               Action {
+                  text: i18n.tr("Share Link")
                   enabled: webview.contextualData.href.toString()
                   onTriggered: {
                       var component = Qt.createComponent("Share.qml")
@@ -120,15 +120,23 @@ MainView {
                }
 
                Action {
-                           text: i18n.tr("Download Image")
+                   text: i18n.tr("Download Image")
                    enabled: webview.contextualData.img.toString() && downloadLoader.status == Loader.Ready
                    onTriggered: downloadLoader.item.downloadPicture(webview.contextualData.img)
                }
 
                Action {
-                           text: i18n.tr("Close")
+                   text: i18n.tr("Close")
                    onTriggered: webview.goBack()
                }
+            }
+
+            Component {
+                id: customDieDialogComponent
+
+                CustomDieDialog {
+                    id: customDieDialog
+                }
             }
 
             function navigationRequestedDelegate(request) {
@@ -144,7 +152,7 @@ MainView {
 
                 if(isValid(url) == false) {
                     console.warn("Opening remote: " + url);
-                    PopupUtils.open(PopupUtils.open(Dialog, Qt.openUrlExternally(url)))
+                    PopupUtils.open(customDieDialogComponent, url)
                     request.action = Oxide.NavigationRequest.ActionReject
                  }
             }
