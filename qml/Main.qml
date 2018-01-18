@@ -114,16 +114,21 @@ MainView {
                   }
 
                Action {
-            text: i18n.tr("Copy Image")
+                  text: i18n.tr("Copy Image")
                   enabled: webview.contextualData.img.toString()
                   onTriggered: Clipboard.push([webview.contextualData.img])
-              }
+               }
+
                Action {
                            text: i18n.tr("Download Image")
                    enabled: webview.contextualData.img.toString() && downloadLoader.status == Loader.Ready
                    onTriggered: downloadLoader.item.downloadPicture(webview.contextualData.img)
                }
 
+               Action {
+                           text: i18n.tr("Close")
+                   onTriggered: webview.goBack()
+               }
             }
 
             function navigationRequestedDelegate(request) {
@@ -139,10 +144,11 @@ MainView {
 
                 if(isValid(url) == false) {
                     console.warn("Opening remote: " + url);
-                    Qt.openUrlExternally(url)
+                    PopupUtils.open(PopupUtils.open(Dialog, Qt.openUrlExternally(url)))
                     request.action = Oxide.NavigationRequest.ActionReject
-                }
+                 }
             }
+
             Component.onCompleted: {
                 preferences.localStorageEnabled = true
                 if (Qt.application.arguments[2] != undefined ) {
@@ -154,6 +160,7 @@ MainView {
 
                 console.warn("url is: " + url)
             }
+
             onGeolocationPermissionRequested: { request.accept() }
 
             Loader {

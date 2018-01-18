@@ -2,14 +2,13 @@
     "name": "sailbook.sailbook",
     "description": "Sailbook is an unofficial Facebook client for Ubuntu Touch OS",
     "title": "Sailbook",
-    "architecture": "armhf",
     "hooks": {
         "Sailbook": {
             "apparmor": "sailbook.apparmor",
             "desktop": "sailbook.desktop"
         }
     },
-    "version": "1.4",
+    "version": "1.5",
     "maintainer": "Rudi Timmermans <rudi.timmer@gmx.us>",
     "framework": "ubuntu-sdk-15.04.6"
 }

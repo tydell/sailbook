@@ -34,6 +34,7 @@ PopupBase {
 
             onCancelPressed: {
                 model.reject()
+                webview.reload()
             }
         }
     }
