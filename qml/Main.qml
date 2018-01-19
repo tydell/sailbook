@@ -124,11 +124,6 @@ MainView {
                    enabled: webview.contextualData.img.toString() && downloadLoader.status == Loader.Ready
                    onTriggered: downloadLoader.item.downloadPicture(webview.contextualData.img)
                }
-
-               Action {
-                   text: i18n.tr("Close")
-                   onTriggered: webview.goBack()
-               }
             }
 
             Component {
