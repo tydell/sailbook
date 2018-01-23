@@ -43,7 +43,8 @@ INSTALLS+=target
 DISTFILES += \
 qml/UCSComponents/EmptyState.qml \
 qml/UCSComponents/RadialAction.qml \
-Uqml/CSComponents/RadialBottomEdge.qml \
+qml/CSComponents/RadialBottomEdge.qml \
+qml/components/BottomMenu.qml \
 qml/Main.qml \
 qml/actions/Copy.qml \
 qml/actions/CopyImage.qml \

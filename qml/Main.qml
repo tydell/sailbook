@@ -4,6 +4,7 @@ import Ubuntu.Components 1.3
 import com.canonical.Oxide 1.19 as Oxide
 import Ubuntu.Components.Popups 1.3
 import "UCSComponents"
+import "components"
 import Ubuntu.Content 1.1
 import "actions" as Actions
 import QtMultimedia 5.0
@@ -11,7 +12,6 @@ import QtFeedback 5.0
 import Ubuntu.Unity.Action 1.1 as UnityActions
 import "."
 import "config.js" as Conf
-import "."
 
 MainView {
     objectName: "mainView"
@@ -198,57 +198,6 @@ MainView {
             }
         }
 
-        RadialBottomEdge {
-            id: nav
-            visible: true
-            actions: [
-                RadialAction {
-                    id: home
-                    iconName: "home"
-                    onTriggered: {
-                        webview.url = 'https://touch.facebook.com'
-                    }
-                    text: qsTr("Home")
-                },
-                RadialAction {
-                    id: forward
-                    enabled: webview.canGoForward
-                    iconName: "go-next"
-                    onTriggered: {
-                        webview.goForward()
-                    }
-                    text: qsTr("Forward")
-                 },
-                 RadialAction {
-                     id: about
-                     iconName: "info"
-                     onTriggered: {
-                         PopupUtils.open(Qt.resolvedUrl("AboutPage.qml")
-                         )
-                     }
-                     text: qsTr("About")
-                 },
-                RadialAction {
-                    id: reload
-                    iconName: "reload"
-                    onTriggered: {
-                        webview.reload()
-                    }
-                    text: qsTr("Reload")
-                },
-                RadialAction {
-                    id: back
-                    enabled: webview.canGoBack
-                    iconName: "go-previous"
-                    onTriggered: {
-                        webview.goBack()
-                    }
-                    text: qsTr("Back")
-                }
-            ]
-        }
-    }
-
     Component {
         id: pickerComponent
         PickerDialog {}
@@ -281,4 +230,11 @@ MainView {
             console.warn("uri-handler request")
         }
     }
+
+
+    BottomMenu {
+        id: bottomMenu
+        width: parent.width
+     }
+   }
 }
