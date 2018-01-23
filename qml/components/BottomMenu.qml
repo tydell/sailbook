@@ -9,7 +9,7 @@ Rectangle {
     id: bottomMenu
     z: 100000
     width: parent.width
-    height: units.gu(6)
+    height: units.gu(3)
     anchors {
         bottom: parent.bottom
     }
@@ -22,7 +22,7 @@ Rectangle {
 
     Row {
         width: parent.width
-        height: parent.height-units.gu(0.2)
+        height: parent.height-units.gu(0.1)
         anchors {
             centerIn: parent
             bottom: parent.bottom
@@ -34,7 +34,7 @@ Rectangle {
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(3.2)
+                width: units.gu(2.8)
                 height: width
                 name: "go-previous"
                 color: tabs.selectedTabIndex == 0 ? "#000000" : "#999999"
@@ -54,7 +54,7 @@ Rectangle {
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(3.2)
+                width: units.gu(2.8)
                 height: width
                 name: "go-next"
                 color: tabs.selectedTabIndex == 1 ? "#000000" : "#999999"
@@ -74,7 +74,7 @@ Rectangle {
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(3.2)
+                width: units.gu(2.8)
                 height: width
                 name: "reload"
                 color: "#999999"
@@ -94,7 +94,7 @@ Rectangle {
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(3.2)
+                width: units.gu(2.8)
                 height: width
                 name: "home"
                 color: tabs.selectedTabIndex == 2 ? "#000000" : "#999999"
@@ -114,7 +114,7 @@ Rectangle {
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(3.2)
+                width: units.gu(2.8)
                 height: width
                 name: "info"
                 color: tabs.selectedTabIndex == 3 ? "#000000" : "#999999"
