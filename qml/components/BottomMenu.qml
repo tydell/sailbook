@@ -9,7 +9,7 @@ Rectangle {
     id: bottomMenu
     z: 100000
     width: parent.width
-    height: units.gu(3)
+    height: units.gu(2.8)
     anchors {
         bottom: parent.bottom
     }
