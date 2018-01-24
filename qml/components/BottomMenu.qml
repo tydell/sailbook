@@ -9,10 +9,8 @@ Rectangle {
     id: bottomMenu
     z: 100000
     width: parent.width
-    height: units.gu(2.8)
-    anchors {
-        bottom: parent.bottom
-    }
+    height: units.gu(6)
+    color: "#3b5998"
 
     Rectangle {
         width: parent.width
@@ -22,82 +20,21 @@ Rectangle {
 
     Row {
         width: parent.width
-        height: parent.height-units.gu(0.1)
+        height: parent.height-units.gu(0.2)
         anchors {
             centerIn: parent
-            bottom: parent.bottom
         }
 
         Item {
-            width: parent.width/5
+            width: parent.width/10
             height: parent.height
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(2.8)
-                height: width
-                name: "go-previous"
-                color: tabs.selectedTabIndex == 0 ? "#000000" : "#999999"
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    webview.goBack()
-                }
-            }
-        }
-
-        Item {
-            width: parent.width/5
-            height: parent.height
-
-            Icon {
-                anchors.centerIn: parent
-                width: units.gu(2.8)
-                height: width
-                name: "go-next"
-                color: tabs.selectedTabIndex == 1 ? "#000000" : "#999999"
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    webview.goForward()
-                }
-            }
-        }
-
-        Item {
-            width: parent.width/5
-            height: parent.height
-
-            Icon {
-                anchors.centerIn: parent
-                width: units.gu(2.8)
-                height: width
-                name: "reload"
-                color: "#999999"
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    webview.reload()
-                }
-            }
-        }
-
-        Item {
-            width: parent.width/5
-            height: parent.height
-
-            Icon {
-                anchors.centerIn: parent
-                width: units.gu(2.8)
+                width: units.gu(3.2)
                 height: width
                 name: "home"
-                color: tabs.selectedTabIndex == 2 ? "#000000" : "#999999"
+                color: "#ffffff"
             }
 
             MouseArea {
@@ -109,15 +46,135 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/5
+            width: parent.width/8
             height: parent.height
 
             Icon {
                 anchors.centerIn: parent
-                width: units.gu(2.8)
+                width: units.gu(3.2)
+                height: width
+                name: "contact-group"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/friends'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "messaging-app-symbolic"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/messages'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "notification"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/notifications'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "toolkit_input-search"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/friends/center/search'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "go-previous"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.goBack()
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "go-next"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.goForward()
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/8
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
                 height: width
                 name: "info"
-                color: tabs.selectedTabIndex == 3 ? "#000000" : "#999999"
+                color: "#ffffff"
             }
 
             MouseArea {
