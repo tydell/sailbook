@@ -232,8 +232,8 @@ MainView {
     }
 
 
-    BottomMenu {
-        id: bottomMenu
+    TopMenu {
+        id: topMenu
         width: parent.width
      }
    }

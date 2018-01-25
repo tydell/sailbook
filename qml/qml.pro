@@ -44,7 +44,7 @@ DISTFILES += \
 qml/UCSComponents/EmptyState.qml \
 qml/UCSComponents/RadialAction.qml \
 qml/CSComponents/RadialBottomEdge.qml \
-qml/components/BottomMenu.qml \
+qml/components/TopMenu.qml \
 qml/Main.qml \
 qml/actions/Copy.qml \
 qml/actions/CopyImage.qml \

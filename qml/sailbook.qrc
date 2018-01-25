@@ -4,7 +4,7 @@
         <file>UCSComponents/EmptyState.qml</file>
         <file>UCSComponents/RadialAction.qml</file> 
         <file>UCSComponents/RadialBottomEdge.qml</file>
-        <file>components/BottomMenu.qml</file>
+        <file>components/TopMenu.qml</file>
         <file>actions/Copy.qml</file>
         <file>actions/CopyImage.qml</file>
         <file>actions/CopyLink.qml</file>

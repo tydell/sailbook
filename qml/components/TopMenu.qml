@@ -6,7 +6,7 @@ import Ubuntu.Components.Popups 1.3
 import Ubuntu.Content 1.1
 
 Rectangle {
-    id: bottomMenu
+    id: topMenu
     z: 100000
     width: parent.width
     height: units.gu(6)
@@ -26,7 +26,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/10
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -46,7 +46,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -66,7 +66,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -86,7 +86,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -106,7 +106,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -126,7 +126,47 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "rssreader-app-symbolic"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/groups'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/11
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "event"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/events'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -146,7 +186,7 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
             height: parent.height
 
             Icon {
@@ -166,7 +206,27 @@ Rectangle {
         }
 
         Item {
-            width: parent.width/8
+            width: parent.width/11
+            height: parent.height
+
+            Icon {
+                anchors.centerIn: parent
+                width: units.gu(3.2)
+                height: width
+                name: "settings"
+                color: "#ffffff"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    webview.url = 'https://touch.facebook.com/settings'
+                }
+            }
+        }
+
+        Item {
+            width: parent.width/11
             height: parent.height
 
             Icon {
