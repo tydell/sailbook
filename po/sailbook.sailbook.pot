@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-25 18:18+0100\n"
+"POT-Creation-Date: 2018-01-26 18:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/rudi/Development/sailbook/qml/Main.qml:93
+#: /home/rudi/Development/sailbook/qml/Main.qml:96
 msgid "Copy Link"
 msgstr ""
 
-#: /home/rudi/Development/sailbook/qml/Main.qml:101
+#: /home/rudi/Development/sailbook/qml/Main.qml:104
 msgid "Share Link"
 msgstr ""
 
-#: /home/rudi/Development/sailbook/qml/Main.qml:117
+#: /home/rudi/Development/sailbook/qml/Main.qml:120
 msgid "Copy Image"
 msgstr ""
 
-#: /home/rudi/Development/sailbook/qml/Main.qml:123
+#: /home/rudi/Development/sailbook/qml/Main.qml:126
 msgid "Download Image"
 msgstr ""
 

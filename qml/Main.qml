@@ -67,7 +67,10 @@ MainView {
 
             anchors {
                 fill: parent
+                right: parent.right
                 bottom: parent.bottom
+                margins: units.gu(0)
+                bottomMargin: units.gu(5)
             }
             width: parent.width
             height: parent.height
@@ -232,8 +235,8 @@ MainView {
     }
 
 
-    TopMenu {
-        id: topMenu
+    BottomMenu {
+        id: bottomMenu
         width: parent.width
      }
    }

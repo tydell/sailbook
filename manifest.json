@@ -8,7 +8,7 @@
             "desktop": "sailbook.desktop"
         }
     },
-    "version": "1.7",
+    "version": "1.8",
     "maintainer": "Rudi Timmermans <rudi.timmer@gmx.us>",
     "framework": "ubuntu-sdk-15.04.6"
 }
