@@ -113,26 +113,6 @@ Rectangle {
                 anchors.centerIn: parent
                 width: units.gu(3.2)
                 height: width
-                name: "toolkit_input-search"
-                color: "#ffffff"
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    webview.url = 'https://touch.facebook.com/friends/center/search'
-                }
-            }
-        }
-
-        Item {
-            width: parent.width/11
-            height: parent.height
-
-            Icon {
-                anchors.centerIn: parent
-                width: units.gu(3.2)
-                height: width
                 name: "rssreader-app-symbolic"
                 color: "#ffffff"
             }
@@ -247,6 +227,3 @@ Rectangle {
         }
     }
 }
-
-
-
