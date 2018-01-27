@@ -70,7 +70,7 @@ MainView {
                 right: parent.right
                 bottom: parent.bottom
                 margins: units.gu(0)
-                bottomMargin: units.gu(5)
+                bottomMargin: units.gu(6)
             }
             width: parent.width
             height: parent.height
